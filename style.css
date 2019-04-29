@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+#cabecalho {
+    background: #27284d;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 500px;
+    border-bottom: 5px solid #27284d;
+}
+#cabecalho h1 {
+    display: none;
+}
+#cabecalho ul {
+list-style: none;
+}
+#cabecalho li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px;
+}
+#cabecalho a {
+    font-size: 16pt;
+    color: #e8ddce;
+    text-decoration: none;
+    font-weight: 200;
+}
+#cabecalho a:hover {
+    color: #a53e4f;
+    transition: 1s;
+}
+#logo {
+    margin: 10px;
+    float: left;
+    width: 210px;
+    height: 50px;
+    background: url(../_imagens/logo-loveacai.png) no-repeat center;
+    display: block;
+}
+#cabecalho nav {
+    float: right;
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+#menu-icon {
+    background: url(../_imagens/menu-icon.png) no-repeat center;
+    display: hidden;
+    width: 32px;
+    height: 32px;
+}
+
+@media only screen and (max-width:640px) {
+    #cabecalho {
+        position: absolute;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #27284d;
+        right: 10px;
+        width: 35%;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        margin: 0;
+    }  
+}

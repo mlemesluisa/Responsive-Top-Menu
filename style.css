@@ -1,30 +1,32 @@
-@charset "UTF-8";
-
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    background-image: url(https://i.ibb.co/QcH2kWS/fundo.png);
+    width: 100%;
+    margin: 0;
+}
+
 
 #cabecalho {
     background: #27284d;
     width: 100%;
     height: 60px;
-    position: fixed;
     top: 0;
-    left:0;
-    z-index: 500px;
-    border-bottom: 5px solid #27284d;
+    position: fixed;
 }
 #cabecalho h1 {
     display: none;
 }
 #cabecalho ul {
 list-style: none;
+word-spacing: 30px;
 }
 #cabecalho li {
     display: inline-block;
     text-transform: uppercase;
-    padding: 5px;
 }
 #cabecalho a {
-    font-size: 16pt;
+    font-size: 18pt;
     color: #e8ddce;
     text-decoration: none;
     font-weight: 200;
@@ -34,26 +36,27 @@ list-style: none;
     transition: 1s;
 }
 #logo {
-    margin: 10px;
+    margin: 4px;
     float: left;
-    width: 210px;
+    width: 50px;
     height: 50px;
-    background: url(../_imagens/logo-loveacai.png) no-repeat center;
+    background: url(https://i.ibb.co/KbrsCSf/heartico.png) no-repeat center;
     display: block;
 }
 #cabecalho nav {
     float: right;
-    padding: 15px;
+    padding-right: 20px;
     font-family: 'Raleway', sans-serif;
 }
 #menu-icon {
-    background: url(../_imagens/menu-icon.png) no-repeat center;
+    background: url(https://i.ibb.co/5vRFHbL/menu-icon.png) no-repeat center;
     display: hidden;
     width: 32px;
     height: 32px;
+    padding: 13px 0 13px 0;
 }
 
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:900px) {
     #cabecalho {
         position: absolute;
     }
@@ -63,7 +66,8 @@ list-style: none;
     nav ul, nav:active ul {
         display: none;
         position: absolute;
-        padding: 20px;
+        padding: 10px;
+        margin: 0;
         background: #27284d;
         right: 10px;
         width: 35%;
@@ -74,7 +78,7 @@ list-style: none;
     nav li {
         text-align: center;
         width: 100%;
-        padding: 15px 0;
         margin: 0;
+    
     }  
 }
